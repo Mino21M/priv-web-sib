@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    {% include "layouts/header.njk" %}
+    </head>
+    <body class="h-100 w-100" style="overflow-y: auto; overflow-x: hidden;">
+        {% include "layouts/navbar.njk" %}
+
+        <div class="container">
+            {{ content | safe }}
+        </div>
+
+        {% include "layouts/footer.njk" %}
+    </body>
+</html>
