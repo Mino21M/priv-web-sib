@@ -3,15 +3,47 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 {% if title %}
-    <title>{{site}} - {{title}}</title>
+    <title>{{site.title}} - {{title}}</title>
 {% else %}
-    <title>{{site}}</title>
+    <title>{{site.title}}</title>
 {% endif %}
 
 {% if description %}
     <meta name="description" content="{{description}}">
 {% else %}
-    <meta name="description" content="{{description}}">
+    <meta name="description" content="{{site.description}}">
 {% endif %}
 
 <link href="/assets/main.css" rel="stylesheet">
+<style>
+    html, body{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    main {
+        padding-bottom: 55px;
+        padding-top: 55px;
+        height: 100%;
+        overflow: hidden;
+    }
+</style>
+
+<script type="text/javascript">
+
+function EventRegister(title){
+    document.getElementById('eventRegistrationLabel').innerText = "Register for event " + title;
+}
+
+function EventInformation(event){
+    event = JSON.parse(event);
+    document.getElementById('eventInformationLabel').innerText = event.title;
+    document.getElementById('eventInformationAbstract').innerText = event.abstract;
+    document.getElementById('eventInformationPresenters').innerText = event.presenters.toString();
+    document.getElementById('eventInformationDate').innerText = event.date;
+    document.getElementById('eventInformationLanguage').innerText = event.language;
+    document.getElementById('eventInformationMaterials').innerText = event.materials.toString();
+}
+
+</script>

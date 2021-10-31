@@ -1,0 +1,35 @@
+---
+layout: default
+--- 
+
+<div class="container">
+    <div class="py-2 row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2 g-lg-3">
+    {%- for event in currentEvents -%}
+    <div class="col d-flex">
+        <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">
+            {{event.title}}
+            </h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+            {{event.presenters}}
+            </h6>
+            <h6 class="card-subtitle mb-2 text-muted">
+            {{event.date}}
+            </h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark col-12 my-2" data-bs-toggle="modal" data-bs-target="#eventRegistration" onclick="EventRegister('{{event.title}}')">
+            Register for this event
+            </button>
+            <button type="button" class="btn btn-dark col-12 my-2" data-bs-toggle="modal" data-bs-target="#eventInformation" onclick="EventInformation('{{ event | stringify }}')">
+            More information
+            </a>
+        </div>
+        </div>
+    </div>
+    {%- endfor -%}
+    </div>
+</div>
+
+{% include "parts/details.njk" %}
+{% include "parts/register.njk" %}

@@ -1,0 +1,18 @@
+[
+    {
+        "date": "27.9.2021, 17:00",
+        "abstract": "",
+        "title": "MISP - Threat Sharing Platform & TheHive",
+        "presenters": ["Ján Skalný", "Martin Mihalovič"],
+        "materials": [""],
+        "language": "Slovak"
+    },
+    {
+        "date": "4.10.2021, 17:00",
+        "abstract": "",
+        "title": "Human OSINT",
+        "presenters": ["Miroslav Sidor"],
+        "materials": [""],
+        "language": "Slovak"
+    }
+]
