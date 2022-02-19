@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+{% if title %}
+    <title>{{site.title}} - {{title}}</title>
+{% else %}
+    <title>{{site.title}}</title>
+{% endif %}
+
+{% if description %}
+    <meta name="description" content="{{description}}">
+{% else %}
+    <meta name="description" content="{{site.description}}">
+{% endif %}
+
+<link href="/assets/main.css" rel="stylesheet">
+<script src="/assets/main.js"></script>
+
+<style>
+    html, body{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    main {
+        padding-top: 55px;
+        height: 100%;
+        overflow: hidden;
+    }
+</style>

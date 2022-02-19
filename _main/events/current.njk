@@ -1,0 +1,36 @@
+---
+layout: default
+--- 
+
+<div class="container">
+    <div class="py-2 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-2 g-lg-3">
+    {%- for event in currentEvents -%}
+        <div class="col d-flex">
+            <div class="card border-{{event.style}}">
+                <div class="card-header h4 text-center bg-{{event.style}} text-white">{{event.title}}</div>
+                <div class="card-body">
+                    {%- for presenter in event.presenters -%}
+                    <div class="card-subtitle mb-2">
+                        <h6 class="mb-0">
+                            {{ presenter.name }}
+                            <p class="text-muted" style="text-align: justify;">
+                                <small>{{ presenter.information }}</small>
+                            </p>
+                        </h6>
+                    </div>
+                    {%- endfor -%}
+                    <h6 class="card-subtitle mb-2">
+                        <em>{{event.date}}</em>
+                    </h6>
+                    
+                    <p class="card-text" style="text-align: justify;">{{ event.annotation }}</p>
+                    
+                </div>
+                <a class="card-footer btn col-12 bg-{{event.style}} text-white" href="{{ event.registration }}" target="_blank">
+                    Registrácia
+                </a>
+            </div>
+        </div>
+    {%- endfor -%}
+    </div>
+</div>

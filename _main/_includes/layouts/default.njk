@@ -1,17 +1,15 @@
 <!doctype html>
 <html lang="en">
     <head>
-    {% include "layouts/header.njk" %}
+    {% include "parts/header.njk" %}
     </head>
     <body>
-        {% include "layouts/navbar.njk" %}
+        {% include "parts/navbar.njk" %}
 
         <main class="float-none m-0 px-0">
             <div class="w-100 h-100 overflow-auto">
                 {{ content | safe }}
             </div>
         </main>
-
-        {% include "layouts/footer.njk" %}
     </body>
 </html>
