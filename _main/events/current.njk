@@ -19,12 +19,16 @@ layout: default
                         </h6>
                     </div>
                     {%- endfor -%}
+
                     <h6 class="card-subtitle mb-2">
                         <em>{{event.date}}</em>
                     </h6>
                     
                     <p class="card-text" style="text-align: justify;">{{ event.annotation }}</p>
                     
+                    {%- for link in event.links -%}
+                    <a href="{{link.url}}" class="card-link">{{ link.text }}</a>
+                    {%- endfor -%}
                 </div>
                 <a class="card-footer btn col-12 bg-{{event.style}} text-white" href="{{ event.registration }}" target="_blank">
                     Registrácia
