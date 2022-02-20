@@ -54,19 +54,19 @@ pagination:
         {% set event_index = event_index + 1 %}
     {%- endfor -%}
     </div>
-
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-            <li class="page-item {% if not pagination.href.previous %}disabled{% endif %}">
-                <a class="page-link text-white {% if not pagination.href.previous %}bg-secondary border-secondary{% else %}bg-dark border-dark{% endif %}" href="{{ pagination.href.previous }}" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-            </li>
-            {%- for pageEntry in pagination.pages %}
-            <li class="page-item{% if pagination.pageNumber == (loop.index - 1) %} disabled{% endif %}">
-                <a class="page-link text-white {% if pagination.pageNumber == (loop.index - 1) %}bg-secondary border-secondary{% else %}border-dark bg-dark{% endif %}" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
-            {%- endfor %}
-            <li class="page-item {% if not pagination.href.next %}disabled{% endif %}">
-                <a class="page-link text-white {% if not pagination.href.next %}bg-secondary border-secondary{% else %}bg-dark border-dark{% endif %}" href="{{ pagination.href.next }}" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a>
-            </li>
-        </ul>
-    </nav>
 </div>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        <li class="page-item {% if not pagination.href.previous %}disabled{% endif %}">
+            <a class="page-link text-white {% if not pagination.href.previous %}bg-secondary border-secondary{% else %}bg-dark border-dark{% endif %}" href="{{ pagination.href.previous }}" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        {%- for pageEntry in pagination.pages %}
+        <li class="page-item{% if pagination.pageNumber == (loop.index - 1) %} disabled{% endif %}">
+            <a class="page-link text-white {% if pagination.pageNumber == (loop.index - 1) %}bg-secondary border-secondary{% else %}border-dark bg-dark{% endif %}" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+        {%- endfor %}
+        <li class="page-item {% if not pagination.href.next %}disabled{% endif %}">
+            <a class="page-link text-white {% if not pagination.href.next %}bg-secondary border-secondary{% else %}bg-dark border-dark{% endif %}" href="{{ pagination.href.next }}" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+    </ul>
+</nav>
