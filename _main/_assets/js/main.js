@@ -7,6 +7,3 @@ import 'popover';
 
 // Bootstrap Tooltip
 import 'tooltip';
-
-// Font Awesome
-import '@fortawesome/fontawesome-free';

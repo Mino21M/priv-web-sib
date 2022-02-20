@@ -57,9 +57,9 @@ Contains all necessery data to run eleventy commands:
 "language": "English"
 ```
 ### style - archive and current
-* `primary` - blue team
-* `danger` - red team
-* `indigo` - represents other topics that do not fall under red or blue team (for example audits,...).
+* `primary` - blue team (blue - #0074d9)
+* `danger` - red team (red - #ff4136)
+* `success` - represents other topics that do not fall under red or blue team (for example audits,...). (indigo - #6610f2)
 ```json
 "style": "primary"
 ```
