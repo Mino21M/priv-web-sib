@@ -4,27 +4,38 @@ layout: default
 
 <div class="container">
     <div class="py-2 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-2 g-lg-3">
+    {% set event_index = 0 %}
     {%- for event in archivedEvents -%}
         <div class="col d-flex">
-            <div class="card border-{{event.style}}">
+            <div class="card border-{{event.style}} h-100 w-100">
                 <div class="card-header h4 text-center bg-{{event.style}} text-white">{{event.title}}</div>
                 <div class="card-body">
-                    {%- for presenter in event.presenters -%}
-                    <div class="card-subtitle mb-2">
-                        <h6 class="mb-0">
-                            {{ presenter.name }}
-                            <p class="text-muted" style="text-align: justify;">
-                                <small>{{ presenter.information }}</small>
-                            </p>
-                        </h6>
-                    </div>
-                    {%- endfor -%}
-                    
+
                     <h6 class="card-subtitle mb-2">
                         <em>{{event.date}}</em>
+                        {% if event.language %}
+                            , {{event.language}}
+                        {% endif %}
                     </h6>
                     
                     <p class="card-text" style="text-align: justify;">{{ event.annotation }}</p>
+
+                    <div class="accordion accordion-flush w-100" id="presenters">
+                        {% set index = 0 %}
+                        {%- for presenter in event.presenters -%}
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="presenters-heading-{{index}}-{{event_index}}">
+                            <button class="accordion-button collapsed card-subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#presenters-collapse-{{index}}-{{event_index}}" aria-expanded="false" aria-controls="presenters-collapse-{{index}}-{{event_index}}">
+                                {{ presenter.name }}
+                            </button>
+                          </h2>
+                          <div id="presenters-collapse-{{index}}-{{event_index}}" class="accordion-collapse collapse" aria-labelledby="presenters-heading-{{index}}-{{event_index}}" data-bs-parent="#presenters">
+                            <div class="accordion-body" style="text-align: justify;">{{ presenter.information }}</div>
+                          </div>
+                        </div>
+                        {% set index = index + 1 %}
+                        {%- endfor -%}
+                      </div>
                     
                     {%- for link in event.links -%}
                     <a href="{{link.url}}" class="card-link">{{ link.text }}</a>
@@ -37,6 +48,7 @@ layout: default
                 {% endif %}
             </div>
         </div>
+        {% set event_index = event_index + 1 %}
     {%- endfor -%}
     </div>
 </div>

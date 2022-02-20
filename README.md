@@ -38,6 +38,54 @@ Contains all necessery data to run eleventy commands:
 * Navbar (feel free to update)
 * Data structure in .json files
 
+## JSON data files
+### date - archive and current
+```json
+"date": "19.03.2021, 17:00"
+```
+### title - archive and current
+```json
+"title": "Volumetrické DDoS"
+```
+### annotation - archive and current
+```json
+"annotation": "description"
+```
+### language - archive and current
+```json
+"language": "Slovensky"
+"language": "English"
+```
+### style - archive and current
+* `primary` - blue team
+* `danger` - red team
+* `indigo` - represents other topics that do not fall under red or blue team (for example audits,...).
+```json
+"style": "primary"
+```
+### links - archive and current
+Link for needed materials, servers used during lectures, ...
+```json
+"links": [
+    {"url": "https://google.com", "text": "Sample text"}
+],
+```
+### presenters - archive and current
+```json
+"presenters": [
+    {"name": "Jozef Novak", "information": "Bio"}
+],
+```
+### registration - current
+```json
+"registration": "https://forms.google.com/aaaa"
+```
+### recording - archive
+```json
+"recording": "https://youtube.com/aaaa"
+```
+
+
 ## Examples
 Examples contain all data that are currently displayed and showed on bootstrap cards on pages /events/current and /events/archive.
 ### Current event

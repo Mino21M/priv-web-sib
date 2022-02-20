@@ -1,15 +1,107 @@
 [
     {
-        "date": "19.03.2022, 17:00",
-        "title": "Volumetrické DDoS",
+        "date": "28.02.2022, 17:00",
+        "title": "Medzinárodné cvičenia z IT security",
         "presenters": [
-            {"name": "Adrián Kocián", "information": "Po štúdiu na FEI STU v Bratislave v odbore Telekomunikácie pracoval na viacerých pozíciách v oblasti bezpečnosti informačných a komunikačných technológií (IKT). V súčasnosti pracuje ako konzultant bezpečnosti IKT pre telekomunikačného operátora pre riešenia ako ochrana pred DDoS útokmi, firewallové riešenia a zlepšenie bezpečnosti firemných zákazníkov."}
+            {"name": "Michal Vangorík", "information": ""}
         ],
-        "links": [{"url": "https://google.com", "text": "Sample text"}],
         "language": "Slovensky",
-        "registration": "https://forms.gle/h61PaDZsgDNk7we98",
-        "registration_till": "18.03.2022, 23:59",
-        "annotation": "Kybernetická bezpečnosť je široká téma, ktorá zahŕňa aj bezpečnosť sietí a zabezpečenie dostupnosti služieb. DDoS útoky predstavujú hrozbu ktorou sa musia denne zaoberať poskytovatelia telekomunikačných služieb, aj mnohé firmy a inštitúcie (nielen) na Slovensku. Na seminári sa pozrieme na to ako a prečo volumetrické DDoS útoky vznikajú, aký býva cieľ a motivácia útočníkov a ako funguje ochrana pred takýmito útokmi v praxi.",
+        "style": "success"
+    },
+    {
+        "date": "07.03.2022, 17:00",
+        "title": "Workshop: OSINT a Taranis-NG",
+        "presenters": [
+            {"name": "Milan Pikula", "information": ""}
+        ],
+        "language": "Slovensky",
+        "style": "danger"
+    },
+    {
+        "date": "14.03.2022, 17:00",
+        "title": "Threat Intelligence a Incident Response",
+        "presenters": [
+            {"name": "David Kosť", "information": ""}
+        ],
+        "language": "Slovensky",
+        "style": "primary"
+    },
+    {
+        "date": "21.03.2022, 17:00",
+        "title": "Automatizácia pomocou Ansible",
+        "presenters": [
+            {"name": "Jan Trenčanský", "information": ""}
+        ],
+        "language": "Slovensky",
+        "style": "primary"
+    },
+    {
+        "date": "28.03.2022, 17:00",
+        "title": "Velociraptor a Windows Forensics",
+        "presenters": [
+            {"name": "Jan Andraško", "information": ""}
+        ],
+        "language": "Slovensky",
+        "style": "primary"
+    },
+    {
+        "date": "04.04.2022, 17:00",
+        "title": "Eveything You Ever Wanted To Know About Windows APIs",
+        "presenters": [
+            {"name": "Sergei Frankoff", "information": ""}
+        ],
+        "language": "English",
+        "style": "danger"
+    },
+    {
+        "date": "11.04.2022, 17:00",
+        "title": "Injection techniques used in Malware",
+        "presenters": [
+            {"name": "Aleksandra Doniec (hasherezade)", "information": ""}
+        ],
+        "language": "English",
+        "style": "danger"
+    },
+    {
+        "date": "25.04.2022, 17:00",
+        "title": "IIS Malware",
+        "presenters": [
+            {"name": "Zuzana Hromcova", "information": ""}
+        ],
+        "language": "Slovensky",
+        "style": "danger"
+    },
+    {
+        "date": "02.05.2022, 17:00",
+        "title": "Úvod do binarnej exploitacie",
+        "presenters": [
+            {"name": "Milan Pikula", "information": ""}
+        ],
+        "language": "Slovensky",
+        "style": "danger"
+    },
+    {
+        "date": "09.05.2022, 17:00",
+        "title": "Bezpečné programovanie",
+        "presenters": [
+            {"name": "Richard Ostertág", "information": ""}
+        ],
+        "language": "Slovensky",
+        "style": "primary"
+    },
+    {
+        "date": "16.05.2022, 17:00",
+        "title": "TBA",
+        "style": "primary"
+    },
+    {
+        "date": "23.05.2022, 17:00",
+        "title": "TBA",
+        "style": "success"
+    },
+    {
+        "date": "30.05.2022, 17:00",
+        "title": "TBA",
         "style": "primary"
     }
 ]

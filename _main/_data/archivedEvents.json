@@ -1,13 +1,152 @@
 [
     {
-        "date": "19.03.2022, 17:00",
+        "date": "19.03.2021, 17:00",
         "title": "Volumetrické DDoS",
         "presenters": [
             {"name": "Adrián Kocián", "information": "Po štúdiu na FEI STU v Bratislave v odbore Telekomunikácie pracoval na viacerých pozíciách v oblasti bezpečnosti informačných a komunikačných technológií (IKT). V súčasnosti pracuje ako konzultant bezpečnosti IKT pre telekomunikačného operátora pre riešenia ako ochrana pred DDoS útokmi, firewallové riešenia a zlepšenie bezpečnosti firemných zákazníkov."}
         ],
-        "links": [{"url": "https://google.com", "text": "Sample text"}],
-        "recording": "https://forms.gle/h61PaDZsgDNk7we98",
         "annotation": "Kybernetická bezpečnosť je široká téma, ktorá zahŕňa aj bezpečnosť sietí a zabezpečenie dostupnosti služieb. DDoS útoky predstavujú hrozbu ktorou sa musia denne zaoberať poskytovatelia telekomunikačných služieb, aj mnohé firmy a inštitúcie (nielen) na Slovensku. Na seminári sa pozrieme na to ako a prečo volumetrické DDoS útoky vznikajú, aký býva cieľ a motivácia útočníkov a ako funguje ochrana pred takýmito útokmi v praxi.",
-        "style": "primary"
+        "style": "danger",
+        "language": "Slovensky"
+    },
+    {
+        "date": "26.03.2021, 17:00",
+        "title": "Ofenzívna bezpečnosť sociálnym inžinierstvom",
+        "presenters": [
+            {"name": "Henrich Slezák", "information": "je bezpečnostný audítor a IT bezpečnostný konzultant v spoločnosti Lifars. Zameriava sa hlavne na riadenie informačnej bezpečnosti, bezpečnostný audit a riadenie rizík. Má viac ako 10 rokov skúseností v oblasti informačnej bezpečnosti (IB). Začínal ako člen analytického oddelenia Vládnej jednotky CSIRT, kde bol zodpovedný za audit a implementáciu informačnej bezpečnosti, vývoj bezpečnostných politík a postupov. Vykonával množstvo školení a snaží sa zvyšovať povedomie o IB. Vykonával viaceré penetračné testy formou sociálneho inžinierstva, čo je jednou z jeho obľúbených zábavných aktivít. Henrich je aj odborníkom na posudzovanie rizík, vrátane rámca riadenia rizík NIST pre informačné systémy a organizácie. Henrich je držiteľom certifikátu ISACA Certified Information Systems Auditor (CISA) a má skúsenosti aj s auditmi podľa ISO/IEC 27001: 2013 a s hodnotením tímov na riešenie bezpečnostných incidentov podľa modelu SIM3, ako aj prostredníctvom hodnotenia CREST Cyber Security Incident Response Maturity."},
+            {"name": "Milan Kyselica", "information": "pracuje ako penetračný tester v Lifars. Jeho hlavné zameranie je na Red Teaming, Vulnerability Assessment a testovanie bezpečnosti webových aplikácií. Jeho predchádzajúce pozície, penetračný tester v Computer Security Incident Response Team Slovakia - CSIRT, Nethemba a ďalších, mu priniesli skúsenosti s mobilnými aplikáciami, webovými aplikáciami a testovaním infraštruktúry. So svojim nasadením a znalosťami v oblasti informačnej bezpečnosti má skúsenosti v oblasti zodpovedného zverejňovania (Responsible Disclosure), taktiež v rámci rôznych Bug Bounty programov a súťaží. Je držiteľom certifikátov Offensive Security Certified Professional (OSCP) a Offensive Security Wireless Professional (OSWP)."}
+        ],
+        "links": [{"url": "https://qubitacademy.com/sk/ofenzivna-bezpecnost/", "text": "Komerčné školenie"}],
+        "annotation": "Workshop je zameraný na plánovanie, prípravu, vykonávanie a vyhodnocovanie etických útokov formou sociálneho inžinierstva s cieľom odhalenia slabých miest v bezpečnosti a ich nápravy. Od prvotného kontaktu s klientom, cez plánovanie testovania, vykonanie OSINT, prípravu nástrojov až po doručenie payload-u cieľu a vyhodnocovanie. Prejdeme si všetky fázy testovania z teoretického aj praktického hľadiska spolu s ukážkami práce s rôznymi nástrojmi a tipmi ako zvýšiť úspešnosť vášho útoku.",
+        "style": "danger",
+        "language": "Slovensky"
+    },
+    {
+        "date": "02.04.2021, 17:00",
+        "title": "Vytváranie SIGMA detekčných pravidiel",
+        "presenters": [
+            {"name": "Ján Trenčanský", "information": "vyštudoval bakalársky program na FIIT STU (štúdium, ktoré trvalo dlhšie akoby rád priznal). Behom tohto pracoval v IT Operations dnes už bývalej Zuno banke. Potom krátko pracoval pre ESET, ktorý na dlhšiu dobu vymenil za Binary Confidence. Dnes opäť pracuje pre ESET, na pozícii Security monitoring specialist. Občas prispieva do open-source projektov zameraných na bezpečnosť."}
+        ],
+        "annotation": "V krátkosti si predstavíme open-source projekt Sigma. Je to generický formát písania detekčných pravidiel pre SIEM systémy, je to pre logy niečo ako je YARA pre súbory alebo SNORT pre pcapy. Ukážeme si ako fungujú detekcie napríklad pre zaujímavú \"living off the land\" techniku alebo pre techniku pozorovanú pri APT skupine, ukážeme si aj jednoduchý príklad pre Linux.",
+        "style": "primary",
+        "language": "Slovensky"
+    },
+    {
+        "date": "09.04.2021, 17:00",
+        "title": "Zákon o kybernetickej bezpečnosti",
+        "presenters": [
+            {"name": "Roman Čupka", "information": "je hlavným konzultantom spoločnosti Flowmon Networks, CEO a spoluzakladateľom spoločnosti Synapsa Networks. Má viac ako 15 rokov skúseností v oblasti IT s hlavným zameraním na počítačové siete, infraštruktúru, informačnú a kybernetickú bezpečnosť a business inteligenciu. Špecializuje sa na monitoring aplikácií, bezpečnosti sietí s použitím AI (ML), detekciu kybernetických hrozieb a automatizáciu reakcií na prípadné incidenty."}
+        ],
+        "recording": "https://bit.ly/3uMVCXV",
+        "annotation": "V priebehu seminára si vysvetlíme základné aspekty Zákona o kybernetickej bezpečnosti 69/2018 Z. z., najdôležitejšie paragrafy zákona a pridružené vyhlášky. Cieľom je pochopiť zákon ako koncept pre firmy a inštitúcie či ústredné orgány verejnej správy, ktoré ho musia reflektovať a plniť dané požiadavky. Prediskutujeme rôzne povinnosti, ktoré zo zákona vyplývajú a ako sa jednotlivé organizácie na tieto požiadavky v súčasnosti pripravujú.",
+        "style": "success",
+        "language": "Slovensky"
+    },
+    {
+        "date": "16.04.2021, 17:00",
+        "title": "Network Detection and Response",
+        "presenters": [
+            {"name": "Roman Čupka", "information": "je hlavným konzultantom spoločnosti Flowmon Networks, CEO a spoluzakladateľom spoločnosti Synapsa Networks. Má viac ako 15 rokov skúseností v oblasti IT s hlavným zameraním na počítačové siete, infraštruktúru, informačnú a kybernetickú bezpečnosť a business inteligenciu. Špecializuje sa na monitoring aplikácií, bezpečnosti sietí s použitím AI (ML), detekciu kybernetických hrozieb a automatizáciu reakcií na prípadné incidenty."},
+            {"name": "Martin Ševčík", "information": "Presale Engineer, Flowmon Networks, pôsobí v odbore kybernetickej bezpečnosti viac ako 20 rokov. Riešením kybernetických incidentov získal bohaté skúsenosti, ktoré uplatňuje ako konzultant a školiteľ. Je spoluautorom publikácie \"Bezpečná počítačová síť\""}
+        ],
+        "annotation": "Vidieť znamená vedieť. Čo nevidíme, nedokážeme identifikovať. V priebehu seminára si vysvetlíme základné aspekty viditeľnosti do počítačových sietí na úrovni dátových tokov a sieťových paketov s použitím riešenia Flowmon. Tá je základom pre „DRIF” (Detection, Response, Incident Forensics) na sieťovej úrovni. Ukážeme si možnosti využitia 200 algoritmov v 42 detekčných metódach s použitím vstavanej automatizovanej inteligencie, strojového učenia, heuristiky, porovnávania vzoriek chovania, signatúr a nástrojov pre „threat intelligence” pre detekciu rôznych typov malware, ransomware, cryptojacking, úniku dát a ďalších kybernetických hrozieb dnešných dní.",
+        "style": "primary",
+        "language": "Slovensky"
+    },
+    {
+        "date": "23.04.2021, 17:00",
+        "title": "Security Information and Event Management",
+        "presenters": [
+            {"name": "Roman Čupka", "information": "je hlavným konzultantom spoločnosti Flowmon Networks, CEO a spoluzakladateľom spoločnosti Synapsa Networks. Má viac ako 15 rokov skúseností v oblasti IT s hlavným zameraním na počítačové siete, infraštruktúru, informačnú a kybernetickú bezpečnosť a business inteligenciu. Špecializuje sa na monitoring aplikácií, bezpečnosti sietí s použitím AI (ML), detekciu kybernetických hrozieb a automatizáciu reakcií na prípadné incidenty."},
+            {"name": "Pavol Dovičovič", "information": "je IT guru v oblasti návrhu, architektúry a správy bezpečnostných systémov. Je tiež špecialistom na kybernetickú bezpečnosť s dlhoročnými skúsenosťami a hlbokými znalosťami v oblasti informačných technológií, o ktoré sa delí na praktických školeniach a konferenciách. Zasadzuje sa za automatizáciu kybernetickej bezpečnosti s proaktívnym prístupom k praktickým riešeniam a momentálne okrem iného zastáva pozíciu technického riaditeľa v spoločnosti Synapsa Networks."}
+        ],
+        "annotation": "Centrálny monitorovací a auditný systém - aj tak sa dá nazvať SIEM (Security Information and Management System). Nadviažeme na predošlý seminár (NDR) a ukážeme si, ako doplniť vizibilitu o ďalší systém schopný zbierať, ukladať, vyhodnocovať a triediť logy z IT infraštruktúry s cieľom detegovať a predchádzať kybernetickým bezpečnostným incidentom. Pozrieme sa na základné princípy fungovania SIEM, automatizované vyhodnocovanie a prioritizovanie bezpečnostných udalostí a ukážeme si SIEM systém IBM QRadar v demo prevádzke.",
+        "style": "primary",
+        "language": "Slovensky"
+    },
+    {
+        "date": "30.04.2021, 17:00",
+        "title": "Visibility & Automation - SOAR",
+        "presenters": [
+            {"name": "Roman Čupka", "information": "je hlavným konzultantom spoločnosti Flowmon Networks, CEO a spoluzakladateľom spoločnosti Synapsa Networks. Má viac ako 15 rokov skúseností v oblasti IT s hlavným zameraním na počítačové siete, infraštruktúru, informačnú a kybernetickú bezpečnosť a business inteligenciu. Špecializuje sa na monitoring aplikácií, bezpečnosti sietí s použitím AI (ML), detekciu kybernetických hrozieb a automatizáciu reakcií na prípadné incidenty."},
+            {"name": "Pavol Dovičovič", "information": "je IT guru v oblasti návrhu, architektúry a správy bezpečnostných systémov. Je tiež špecialistom na kybernetickú bezpečnosť s dlhoročnými skúsenosťami a hlbokými znalosťami v oblasti informačných technológií, o ktoré sa delí na praktických školeniach a konferenciách. Zasadzuje sa za automatizáciu kybernetickej bezpečnosti s proaktívnym prístupom k praktickým riešeniam a momentálne okrem iného zastáva pozíciu technického riaditeľa v spoločnosti Synapsa Networks."},
+            {"name": "Luboš Chovan", "information": "má viac ako 15-ročné skúsenosti v oblasti správy a zabezpečenia počítačových sietí. Vo svojej kariére si prešiel niekoľkými pozíciami pre tých najväčších technologických hráčov na trhu, má za sebou po celom svete niekoľko úspešných projektov pre veľké organizácie, poskytovateľov internetových služieb a mobilných operátorov. V súčasnosti pracuje ako hlavný technický konzultant pre strednú a východnú Európu v Palo Alto Networks."}
+        ],
+        "annotation": "Koncept SOAR (Security Orchestration, Automation and Response) reflektuje súbor rôznych nástrojov a riešení, ktoré umožňujú organizáciám zefektívniť bezpečnostné operácie pre správu hrozieb a zraniteľností, reakcie na incidenty a automatizáciu bezpečnostných operácií. V priebehu seminára si vysvetlíme základné pojmy, prístupy a princípy. Naviac si ukážeme softvérovú platformu Synapsa, ktorá vznikla ako start-up pred necelými dvomi rokmi na Slovensku a reflektuje požiadavky trhu na automatizáciu (nielen) v oblasti kybernenetickej bezpečnosti s príkladmi použitia, napr. pre Incident Response Automation, Automated Threat Mitigation, Security Policy Change Management alebo Securtiy Policy Audit and Enforcement.",
+        "style": "primary",
+        "language": "Slovensky"
+    },
+    {
+        "date": "07.05.2021, 17:00",
+        "title": "Pasce na chytanie útočníkov",
+        "presenters": [
+            {"name": "Pavol Sokol", "information": "je vedúcim tímu na riešenie bezpečnostných incidentov na Univerzite Pavla Jozefa Šafárika v Košiciach (CSIRT-UPJS). Okrem operatívnej činnosti spojenej s CSIRT (Computer Security Incident Response Team) sa venuje aj vzdelávacej a výskumnej činnosti. V rámci výskumu sa zameriava na oblasť informačnej a kybernetickej bezpečnosti a práva informačných a komunikačných technológií vrátane technických a právnych aspektov podvodných systémov. Je členom Českej kapitoly Honeynet Project organizácie, ktorá združuje odborníkov a výskumníkov v oblasti honeypotov a iných bezpečnostných technológií."}
+        ],
+        "annotation": "Podvodné systémy predstavujú z pohľadu ochrany organizácie nezastupiteľný prvok. Umožňujú organizácii získavať o aktéroch hrozieb cenné informácie v podobe vektora a cieľa útoku, použitých nástrojov a využívaných informačných zdrojov. Najznámejšou podvodnou technikou sú honeypoty - pasce pre útočníkov. V rámci webinára si bližšie priblížime, čo sú honeypoty, ako fungujú a aké benefity prinášajú pre organizáciu. Zameriame sa na výber a nasadenie honeypotov a na právne a technické otázky súvisiace s ich samotnou prevádzkou.",
+        "style": "primary",
+        "language": "Slovensky"
+    },
+    {
+        "date": "14.05.2021,  17:00",
+        "title": "Next-Generation Firewall",
+        "presenters": [
+            {"name": "Roman Čupka", "information": "je hlavným konzultantom spoločnosti Flowmon Networks, CEO a spoluzakladateľom spoločnosti Synapsa Networks. Má viac ako 15 rokov skúseností v oblasti IT s hlavným zameraním na počítačové siete, infraštruktúru, informačnú a kybernetickú bezpečnosť a business inteligenciu. Špecializuje sa na monitoring aplikácií, bezpečnosti sietí s použitím AI (ML), detekciu kybernetických hrozieb a automatizáciu reakcií na prípadné incidenty."},
+            {"name": "Luboš Chovan", "information": "má viac ako 15-ročné skúsenosti v oblasti správy a zabezpečenia počítačových sietí. Vo svojej kariére si prešiel niekoľkými pozíciami pre tých najväčších technologických hráčov na trhu, má za sebou po celom svete niekoľko úspešných projektov pre veľké organizácie, poskytovateľov internetových služieb a mobilných operátorov. V súčasnosti pracuje ako hlavný technický konzultant pre strednú a východnú Európu v Palo Alto Networks."}
+        ],
+        "annotation": "Povieme si, čo to je Next-Generation Firewall, aký je rozdiel od legacy (zastaraných) Layer 4 firewallov, prečo je to dôležité a pozrieme sa bližšie na rozpoznávanie aplikácií, prevenciu pred stratou dát (Data Loss Prevention), rozpoznávanie zariadení, strojové učenie (Machine Learning) a vysvetlíme si techniky, ktoré malvér používa na prienik do siete a ako sa takýmto útokom brániť. Povieme si niečo o SSL/TLS inspection, Advanced URL Filtering, phishing a fileless útokoch.",
+        "style": "primary",
+        "language": "Slovensky"
+    },
+    {
+        "date": "21.05.2021, 17:00",
+        "title": "Bezpečnosť priemyselných systémov - OT bezpečnosť",
+        "presenters": [
+            {"name": "Roman Čupka", "information": "je hlavným konzultantom spoločnosti Flowmon Networks, CEO a spoluzakladateľom spoločnosti Synapsa Networks. Má viac ako 15 rokov skúseností v oblasti IT s hlavným zameraním na počítačové siete, infraštruktúru, informačnú a kybernetickú bezpečnosť a business inteligenciu. Špecializuje sa na monitoring aplikácií, bezpečnosti sietí s použitím AI (ML), detekciu kybernetických hrozieb a automatizáciu reakcií na prípadné incidenty."},
+            {"name": "Martin Fabry", "information": "je Critical Infrastructure Cyber Security Consultant, Accura, s. r. o. Konzultant, audítor, architekt a “industrial defender” v oblasti kybernetickej bezpečnosti ICS/DCS. Špecializuje sa na komplexnú kybernetickú ochranu IT a OT prostredí (SCADA ICS/DCS). Denne čelí náročným výzvam a úlohám v prostredí OT. Nasadzuje kybernetické opatrenia v rôznych kritických infraštruktúrach a odvetviach priemyslu. Má medzinárodné skúsenosti s kybernetickými projektmi v oblasti OT v rámci Európy i blízkeho východu. Martin je členom SANS ICS komunity, ISA Europe a držiteľom certifikácií CISSP, GICSP, CSSA, CISA, GRID, IEC 62443 Expert."}
+        ],
+        "annotation": "Ostrovné systémy v OT (Operational Technology) sieťach sú už prežitkom doby. Prenos dát z IT do OT, nezabezpečené vzdialené prístupy, prenositeľné médiá či útoky zo strany dodávateľských služieb a produktov predstavujú ohrozenie výroby alebo zníženie produktivity. Hackeri sa môžu dostať oveľa ľahšie k riadiacim systémom, ktoré sú viac ako dekádu staré a môžu zneužiť ich slabiny k úspešnej kompromitácii.",
+        "style": "primary",
+        "language": "Slovensky"
+    },
+    {
+        "date": "04.06.2021, 17:00",
+        "title": "Analýza škodlivého kódu",
+        "presenters": [
+            {"name": "Jan Kopřiva", "information": "vede v ALEF Group tým zaměřený na řešení kybernetických bezpečnostních incidentů a ofenzivní bezpečnost a současně působí jako jeden z bezpečnostních specialistů ve světoznámém SANS Internet Storm Center. Z počátku své kariéry se zaměřoval zejména na bezpečnostní analytiku, reakci na incidenty, analýzu malware a další aspekty tzv. „modré“ bezpečnosti, ale v průběhu času získal široké zkušenosti i v oblasti penetračních testů, red teamingu a ofenzivní bezpečnosti obecně. V současnosti se profesně nachází na pomezí „červené“ a „modré“ bezpečnosti a zaměřuje se mimo jiné na propojení těchto oblastí v rámci aktivit souvisejících s takzvaným purple teamingem. Je autorem řady bezpečnostních kurzů, odborných výzkumů a článků zaměřených na různé aspekty kybernetické bezpečnosti a pravidelně přednáší na domácích i zahraničních odborných konferencích."}
+        ],
+        "annotation": "Malware, tedy škodlivý softwarový kód, je v současnosti součástí téměř každého komplexnějšího kybernetického útoku. Bez ohledu na to, zda je oběti doručen v příloze e-mailu, stažen z internetu, nebo jej útočník manuálně nahrál na cílový stroj, malware je v určité podobě každodenním společníkem většiny IT profesionálů a zejména specialistů na kybernetickou bezpečnost. Alespoň základní schopnost analýzy podezřelých a škodlivých souborů by tak měla být v pomyslném arzenálu v podstatě jakéhokoli bezpečnostního specialisty. 120 minut rozhodně není dostatečný čas pro získání schopnosti hlouběji analyzovat kód, v rámci tohoto workshopu si tak v tomto čase představíme alespoň základy této problematiky a s pomocí řešení několika praktických cvičení položíme základy pro případné pozdější budování hlubších znalostí a schopností analýzy malwaru. Workshop bude rozdělen do následujících volně navazujících kapitol: Teoretické základy pro oblast škodlivého kódu a jeho analýzy, Různé formáty škodlivých souborů a rozdílné přístupy a nástroje k jejich analýze, Úvodní analýza podezřelých vzorků, Základy dynamické analýzy kódu, Základy statické analýzy kódu",
+        "style": "primary",
+        "language": "Slovensky"
+    },
+    {
+        "date": "11.06.2021, 17:00",
+        "title": "Side-channel Attacks",
+        "presenters": [
+            {"name": "Xiaolu Hou", "information": "is currently an assistant professor at FIIT, STU. She obtained her Ph.D. degree in Mathematics from Nanyang Technological University, Singapore in May 2017. Her research focus is on fault injection and side-channel attacks. She also has research experience in security of neural networks, location privacy, multiparty computation, and differential privacy. With a wide range of research interests, she has published her work at top venues within various fields, ranging from mathematics to computer security."}
+        ],
+        "annotation": "Cryptography provides algorithms that enable secure communication in theory. However, in real world, these algorithms have to be implemented on real devices. To evaluate the security level of cryptographic implementations, it is necessary to include a physical security assessment. In this talk, we will first give a brief introduction to symmetric ciphers and different physical attack methods. The working principles of one type of physical attack, EM/power analysis, and its countermeasures will be discussed in more detail. In recent years, the application of AI to EM/power analysis is gaining more attention. One line of work focuses on proposing a generic neural network structure for such attacks on various datasets with different countermeasures. An example of such a work will be presented. On the other hand, decision-making tasks carried out by the usage of neural networks are successfully taking over in many areas, including those that are security-critical, such as healthcare, transportation, smart grids, where intentional and unintentional failures can be disastrous. Neural network implementations rely on hardware platforms (e.g., FPGAs, GPUs, and microcontrollers) to accelerate the computations. As will be shown in the first part of the talk, these physical systems are vulnerable to physical attacks. Therefore, there is a necessity to evaluate the potential attacks that can target neural networks on the hardware level. In the last part of the talk, we will present various physical attacks on AI implementations.",
+        "style": "danger",
+        "language": "English"
+    },
+    {
+        "date": "18.06.2021, 17:00",
+        "title": "SIEM systém - Elastic Stack + ElastAlert",
+        "presenters": [
+            {"name": "Eva Marková", "information": "je čerstvou absolventkou v odbore Informatika na Univerzite Pavla Jozefa Šafárika v Košiciach. Momentálne zastáva pozíciu – Incident handler – na CSIRT UPJŠ v Košiciach, ktorý je 1. akademickým tímom na riešenie bezpečnostných incidentov na Slovensku. Pracuje tiež pre vládnu jednotku CSIRT.SK, kde je jej úlohou zhromažďovať informácie a vytvárať reporty o aktuálnych útokoch a zraniteľnostiach."}
+        ],
+        "annotation": "Pojem SIEM systém bol v rámci semináru viackrát opakovaný, avšak na tomto workshope si prejdeme inštaláciu SIEM systému od začiatku až po koniec. Ukážeme si, že aj v domácom prostredí na virtuálnom stroji si vieme vybudovať \"mini SOC (Security Operation Center)\". Pozrieme sa na open-source riešenie Elastic Stack (Elasticsearch, Logstash, Kibana), pričom ako nástroj na samotné alertovanie využijeme ElastAlert. Tiež si ukážeme, že pravidlá je možné písať nielen priamo pre ElastAlert, ale tiež vo všeobecnom formáte Sigma.",
+        "style": "primary",
+        "language": "Slovensky"
+    },
+    {
+        "date": "25.06.2021, 17:00",
+        "title": "Reverzné inžinierstvo malvéru",
+        "presenters": [
+            {"name": "Peter Košinár", "information": "vyštudoval informatiku na FMFI UK a pred viac ako pätnástimi rokmi sa zamestnal v ESET-e. V súčasnosti sa pozerá najmä na zaujímavé prípady súvisiace s malvérom -– nech už ide o neštandardné vstupné vektory, šifrovanie, ochranu proti analýze... Okrem svojej práce tiež príležitostne prednáša na stredných či vysokých školách pre študentov informatiky o témach súvisiacich s analýzou malvéru a o počítačovej bezpečnosti všeobecne."},
+            {"name": "Robert Lipovský", "information": "je Senior Malware Researcher v spoločnosti ESET so 14-ročnými skúsenosťami s výskumom škodlivého kódu, kyberzločinu a pokročilých hrozieb. Vedie tím výskumníkov a pravidelne publikuje v odborných ako aj mainstreamových médiách a prezentuje na bezpečnostných konferenciách. Vyštudoval informatiku na FEI STU a teraz o kyberbezpečnosti, reverznom inžinierstve a analýze malvéru prednáša vysokoškolským študentom."}
+        ],
+        "annotation": "Modelový scenár: Neznámy útočník získal neznámym spôsobom prístup k počítaču v našej sieti, stiahol naň z neznámeho zdroja neznámy program, ktorý následne neznáme ako spustil... a zašifroval neznámym algoritmom všetky naše dáta. Naša misia, pokiaľ sa ju rozhodneme prijať, spočíva v premene aspoň niektorých „neznámych“ na „známe“. Tento disk sa zničí za 5...4...3...2...CTRL+C. Na workshope sa pozrieme na to, ako by sa takýto incident mohol dať riešiť. Určite sa nám bude hodiť nejaký nástroj na analýzu skompilovaných programov a taktiež sa dá očakávať nejaká matika (ale zase nie extra veľa). Čo ďalšie bude treba, to uvidíme až „za behu“ -- v praxi tiež človek nemá všetko nalinkované vopred.",
+        "style": "primary",
+        "language": "Slovensky"
     }
 ]
