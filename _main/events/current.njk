@@ -6,6 +6,7 @@ layout: default
     <div class="py-2 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-2 g-lg-3">
     {% set event_index = 0 %}
     {%- for event in currentEvents -%}
+        {% if event.title %}
         <div class="col d-flex">
             <div class="card border-{{event.style}} h-100 w-100">
                 <div class="card-header h4 text-center bg-{{event.style}} text-white">{{event.title}}</div>
@@ -52,6 +53,7 @@ layout: default
                 {% endif %}
             </div>
         </div>
+        {% endif %}
         {% set event_index = event_index + 1 %}
     {%- endfor -%}
     </div>

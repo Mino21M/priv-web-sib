@@ -1,11 +1,14 @@
 ﻿---
 layout: default
+pagination:
+    data: archivedEvents
+    size: 6
 --- 
 
 <div class="container">
     <div class="py-2 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-2 g-lg-3">
     {% set event_index = 0 %}
-    {%- for event in archivedEvents -%}
+    {%- for event in pagination.items -%}
         <div class="col d-flex">
             <div class="card border-{{event.style}} h-100 w-100">
                 <div class="card-header h4 text-center bg-{{event.style}} text-white">{{event.title}}</div>
@@ -51,4 +54,19 @@ layout: default
         {% set event_index = event_index + 1 %}
     {%- endfor -%}
     </div>
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            <li class="page-item {% if not pagination.href.previous %}disabled{% endif %}">
+                <a class="page-link text-white {% if not pagination.href.previous %}bg-secondary border-secondary{% else %}bg-dark border-dark{% endif %}" href="{{ pagination.href.previous }}" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+            </li>
+            {%- for pageEntry in pagination.pages %}
+            <li class="page-item{% if pagination.pageNumber == (loop.index - 1) %} disabled{% endif %}">
+                <a class="page-link text-white {% if pagination.pageNumber == (loop.index - 1) %}bg-secondary border-secondary{% else %}border-dark bg-dark{% endif %}" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+            {%- endfor %}
+            <li class="page-item {% if not pagination.href.next %}disabled{% endif %}">
+                <a class="page-link text-white {% if not pagination.href.next %}bg-secondary border-secondary{% else %}bg-dark border-dark{% endif %}" href="{{ pagination.href.next }}" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a>
+            </li>
+        </ul>
+    </nav>
 </div>

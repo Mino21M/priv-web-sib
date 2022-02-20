@@ -57,6 +57,7 @@ Contains all necessery data to run eleventy commands:
 "language": "English"
 ```
 ### style - archive and current
+[Color palette](https://icolorpalette.com/6c0679_264001_f91002_032946_a10018)
 * `primary` - blue team (blue - #0074d9)
 * `danger` - red team (red - #ff4136)
 * `success` - represents other topics that do not fall under red or blue team (for example audits,...). (indigo - #6610f2)
