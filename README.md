@@ -32,6 +32,7 @@ Contains all necessery data to run eleventy commands:
 * Update currentEvents.json
 * Update archivedEvents.json
 * Add favicon and logo to navbar
+* Pagination in archive not overflowing correctly
 
 ## DONE
 * Basic structure of website
