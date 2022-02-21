@@ -2,59 +2,25 @@
 layout: default
 --- 
 
-<div class="container">
-    <div class="py-2 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-2 g-lg-3">
-    {% set event_index = 0 %}
-    {%- for event in currentEvents -%}
+<div class="container pt-2">
+    <ul class="list-group list-group-flush">
+        {%- for event in currentEvents -%}
         {% if event.title %}
-        <div class="col d-flex">
-            <div class="card border-{{event.style}} h-100 w-100">
-                <div class="card-header h4 text-center bg-{{event.style}} text-white">{{event.title}}</div>
-                <div class="card-body">
-
-                    <h6 class="card-subtitle mb-2">
-                        <em>{{event.date}}</em>
-                        {% if event.language %}
-                            , {{event.language}}
-                        {% endif %}
-                    </h6>
-                    
-                    <p class="card-text" style="text-align: justify;">{{ event.annotation }}</p>
-
-                    <div class="accordion accordion-flush w-100" id="presenters">
-                        {% set index = 0 %}
-                        {%- for presenter in event.presenters -%}
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="presenters-heading-{{index}}-{{event_index}}">
-                            <button class="accordion-button collapsed card-subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#presenters-collapse-{{index}}-{{event_index}}" aria-expanded="false" aria-controls="presenters-collapse-{{index}}-{{event_index}}">
-                                {{ presenter.name }}
-                            </button>
-                          </h2>
-                          <div id="presenters-collapse-{{index}}-{{event_index}}" class="accordion-collapse collapse" aria-labelledby="presenters-heading-{{index}}-{{event_index}}" data-bs-parent="#presenters">
-                            <div class="accordion-body" style="text-align: justify;">{{ presenter.information }}</div>
-                          </div>
-                        </div>
-                        {% set index = index + 1 %}
-                        {%- endfor -%}
-                      </div>
-                    
-                    {%- for link in event.links -%}
-                    <a href="{{link.url}}" class="card-link">{{ link.text }}</a>
-                    {%- endfor -%}
-                </div>
-                {% if event.recording %}
-                <a class="card-footer btn col-12 bg-{{event.style}} text-white" href="{{ event.registration  }}" target="_blank">
-                    Registrácia
-                </a>
-                {% else %}
-                <a class="card-footer btn col-12 bg-{{event.style}} text-white disabled" href="#">
-                    Registrácia - TBA
-                </a>
-                {% endif %}
-            </div>
-        </div>
+        <li class="list-group-item">
+            <h4 class="text-{{event.style}}">{{event.title}}</h4>
+            <h6 class="event-date">{{event.date}}{% if event.language %}, {{event.language}}{% endif %}</h6>
+            <p class="text-bold">{% if event.presenters.length > 0 %}{{ event.presenters | join(", ") }}{% endif %}</p>
+            <p class="text-bold">
+            {%- for link in event.links -%}
+                <a href="{{link.url}}" class="link-{{event.style}} me-2">{{link.text}}</a>
+            {%- endfor -%}
+            </p>
+            {%- if event.registration -%}
+            <a class="btn btn-{{event.style}}" href="{{event.registration}}" target="_blank" role="button">Registrácia</a>
+            {% endif %}
+        </li>
         {% endif %}
-        {% set event_index = event_index + 1 %}
-    {%- endfor -%}
+        {%- endfor -%}
+    </ul>
     </div>
 </div>

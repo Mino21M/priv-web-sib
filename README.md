@@ -24,20 +24,23 @@ Contains all necessery data to run eleventy commands:
 ```
 
 ## TODO
-* Better frontend:
+* Frontend:
     * /
     * /about
-    * /events/current
-    * /events/archive
 * Update currentEvents.json
 * Update archivedEvents.json
 * Add favicon and logo to navbar
 * Pagination in archive not overflowing correctly
+* About: add section find us on linkedin, email: sib@fiit.stuba.sk, ...?
+* Make email somehow have same html code as [emails on this site](https://netacad.fiit.stuba.sk/kontakt)
 
 ## DONE
 * Basic structure of website
 * Navbar (feel free to update)
 * Data structure in .json files
+* Frontend:
+    * /events/current
+    * /events/archive
 
 ## JSON data files
 ### date - archive and current

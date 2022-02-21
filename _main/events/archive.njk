@@ -41,12 +41,12 @@ pagination:
                       </div>
                     
                     {%- for link in event.links -%}
-                    <a href="{{link.url}}" class="card-link">{{ link.text }}</a>
+                    <a href="{{link.url}}" class="card-link" target="_blank">{{ link.text }}</a>
                     {%- endfor -%}
                 </div>
                 {% if event.recording %}
                 <a class="card-footer btn col-12 bg-{{event.style}} text-white" href="{{ event.recording }}" target="_blank">
-                    Záznam
+                    Záznam 
                 </a>
                 {% endif %}
             </div>

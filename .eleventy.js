@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('stringify', event => {
     return JSON.stringify(event);
   })
+  eleventyConfig.addPassthroughCopy("_main/img");
 
   return {
     dir: {
